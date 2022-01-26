@@ -25,30 +25,6 @@ for (let tabElement of tabNavigationElements){
     });
 }
 
-const swiper = new Swiper('.reviews-swiper',{
-    
-    speed: 900,
-    slidesPerView: 1,
-    spaceBetween: 50,
-    slidesPerGroup: 1,
-    
-    autoHeight: true,
-    loop: true,
-    autoplay: {
-        delay: 3000, 
-    },
-    pagination:{
-        el: '.swiper-pagination',
-        clickable: true
-    },
-    breakpoints:{
-        800:{
-          slidesPerView: 3,
-          spaceBetween: 120
-        }
-      }
-});
-
 const url = `https://api.openweathermap.org/data/2.5/weather?q=vilnius&units=metric&appid=af1409639ececf4c3bd84a31fc54f5ae`;
 const weatherElement = document.getElementById("weather-in-celsius");
 function getCurrentWeatherInCelsius() {
